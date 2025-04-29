@@ -3,138 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuong Nguyen - Profile</title> <!-- Updated Title -->
+    <title>Tuong Nguyen - Developer Portfolio</title> <!-- Updated Title -->
     <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome for social icons if needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Tuong Nguyen</div> <!-- Updated Name -->
+    <nav>
+        <!-- Simple Nav if needed, or integrate into header -->
+        <div class="container nav-container">
+            <a href="#" class="logo">Tuong Nguyen</a>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container header-container">
+            <div class="header-left">
+                <h1>MR. TUONG NGUYEN</h1> <!-- Updated Name -->
+                <p>Project Manager | Experienced in leading digital solutions including websites, e-commerce, AR, and web games.</p> <!-- Updated Bio -->
+                <div class="social-links">
+                    <!-- Add actual social links later -->
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:nirannguyen50@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+                <a href="#contact" class="btn">Hire Me</a>
+                <!-- <a href="#" class="btn btn-secondary">Download Resume</a> -->
+            </div>
+            <div class="header-right">
+                <div class="profile-image-bg">
+                    <img src="assets/profile-placeholder.png" alt="Tuong Nguyen Profile Picture"> <!-- Placeholder image -->
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="home">
-            <div class="home-content">
-                <h1>Hello, Welcome</h1>
-                <h2>I'm Tuong Nguyen</h2> <!-- Updated Name -->
-                <p>Project Manager</p> <!-- Updated Title -->
-                <a href="#contact"><button>Contact Me</button></a> <!-- Link button to contact section -->
-            </div>
-            <div class="home-image">
-                <img src="assets/profile-placeholder.png" alt="Tuong Nguyen Profile Picture"> <!-- Placeholder image -->
-            </div>
-        </section>
-
         <section id="about">
-            <div class="about-image">
-                 <img src="assets/about-placeholder.png" alt="About Tuong Nguyen"> <!-- Placeholder image -->
-            </div>
-            <div class="about-content">
+            <div class="container about-container">
                 <h2>About Me</h2>
-                <!-- Extracted from Professional Summary -->
-                <p>Dynamic and results-driven professional with a diverse background in leading innovative projects across various sectors, including business websites, 3D web games, e-commerce platforms, AR, and minigame campaigns. Proven track record of delivering exceptional results within budgetary constraints and strict deadlines. Experienced in managing the full project lifecycle, from conceptualization to execution, with a keen focus on cost estimation, coordination, and process monitoring. Proficient in leveraging data insights to adapt project strategies and optimize outcomes. Skilled in delegating tasks, managing dependencies, and executing comprehensive test plans to ensure project success. Adept at liaising with multidisciplinary teams and stakeholders, maintaining clear communication channels to provide regular updates on project status. Thrives in fast-paced environments and excels at evaluating project performance against KPIs to drive continuous improvement and achieve set objectives. Creative in writing for training generative artificial intelligence models for ranking series of responses produced. Natural storyteller; able to produce stories on given topics and assess accuracy and factuality.</p>
-                <!-- Add CV download button if CV file is provided later -->
-                <!-- <button>Download CV</button> -->
-            </div>
-        </section>
-
-        <section id="services">
-            <h2>My Services / Expertise</h2> <!-- Updated heading -->
-            <div class="service-cards">
-                 <!-- Extracted from Areas of Expertise -->
-                <div class="card">
-                    <h3>Strategic Planning & Execution</h3>
-                    <p>Developing and implementing project strategies aligned with business goals.</p>
-                </div>
-                <div class="card">
-                    <h3>Project Lifecycle Management</h3>
-                    <p>Overseeing projects from initiation through planning, execution, monitoring, and closure.</p>
-                </div>
-                <div class="card">
-                    <h3>AI Writing & Data Analysis</h3>
-                    <p>Leveraging AI for content generation and using data insights to inform decisions.</p>
+                <p>Dynamic and results-driven professional with a diverse background in leading innovative projects across various sectors, including business websites, 3D web games, e-commerce platforms, AR, and minigame campaigns. Proven track record of delivering exceptional results within budgetary constraints and strict deadlines. Experienced in managing the full project lifecycle, from conceptualization to execution, with a keen focus on cost estimation, coordination, and process monitoring...</p> <!-- Shortened Summary -->
+                
+                <div class="about-details">
+                    <div class="education">
+                        <h3>Education</h3>
+                        <ul>
+                            <li>Diploma in Business and Sales Management - Kingston International College, Singapore (Ongoing)</li>
+                            <li>Bachelor of Business Administration (2 Years) - Hutech University (Lincoln Program) (2018)</li>
+                        </ul>
+                    </div>
+                    <div class="certifications">
+                        <h3>Certifications & Courses</h3>
+                        <ul>
+                            <li>PTE Academic (Ongoing)</li>
+                            <li>Social Media Marketing, IMGroup (2023, 2019)</li>
+                            <li>Project Management Certificate, Google (2020)</li>
+                            <li>Exercising Leadership: Foundational Principles, HarvardX (2020)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="portfolio">
-            <h2>My Portfolio / Key Projects</h2> <!-- Updated heading -->
-            <div class="portfolio-grid">
-                 <!-- Extracted from Key Projects -->
-                <div class="portfolio-item">
-                    <img src="assets/portfolio-tose.png" alt="TOSE E-commerce Platform"> <!-- Placeholder image -->
-                    <h4>TOSE E-commerce Platform</h4>
-                    <p>Led end-to-end product implementation, training, and post-deployment monitoring.</p>
-                </div>
-                 <div class="portfolio-item">
-                    <img src="assets/portfolio-nuvi.png" alt="Nuvi World 3D Webgame"> <!-- Placeholder image -->
-                    <h4>Nuvi World 3D Webgame</h4>
-                    <p>Managed cross-functional teams, negotiated vendor deals 30% under budget, delivered ahead of schedule with 20K+ users/month and 4+ billion VND in revenue.</p>
-                </div>
-                 <div class="portfolio-item">
-                    <img src="assets/portfolio-infow.png" alt="Infow eCommerce Website"> <!-- Placeholder image -->
-                     <h4>Infow eCommerce Website</h4>
-                     <p>Achieved 40% profit margin, received 90% positive user feedback.</p>
-                </div>
-                 <div class="portfolio-item">
-                    <img src="assets/portfolio-haohao.png" alt="Hao Hao AR Website"> <!-- Placeholder image -->
-                    <h4>Hao Hao AR Website</h4>
-                    <p>Delivered before deadline using Waterfall, reached 3.5K users in two weeks, enhanced team efficiency.</p>
+        <section id="skills">
+            <div class="container skills-container">
+                <h2>Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <!-- Extracted from Technical Skills / Areas of Expertise -->
+                    <div class="skill-item"><span>Project Management</span></div>
+                    <div class="skill-item"><span>Agile/Scrum</span></div>
+                    <div class="skill-item"><span>Stakeholder Management</span></div>
+                    <div class="skill-item"><span>Strategic Planning</span></div>
+                    <div class="skill-item"><span>MS Office Suite</span></div>
+                    <div class="skill-item"><span>Node.js</span></div>
+                    <div class="skill-item"><span>React JS</span></div>
+                    <div class="skill-item"><span>Java</span></div>
+                    <div class="skill-item"><span>Premiere Pro</span></div>
+                    <div class="skill-item"><span>After Effects</span></div>
+                    <div class="skill-item"><span>Photoshop</span></div>
+                    <div class="skill-item"><span>Illustrator</span></div>
+                    <!-- Add icons later if possible -->
                 </div>
             </div>
         </section>
 
-        <section id="experience">
-            <h2>My Experiences</h2>
-            <div class="experience-list">
-                 <!-- Extracted from Career Experience -->
-                 <div class="experience-item">
-                    <h4>Project Manager @ WAO SOFT</h4>
-                    <span>2023 - Present</span>
-                    <p>Leading end-to-end project management for digital solutions, collaborating with cross-functional teams, coordinating with clients, overseeing multiple project timelines using Agile/Scrum, conducting post-project evaluations, and improving internal workflows.</p>
-                </div>
-                 <div class="experience-item">
-                    <h4>Project Manager @ TOP GROUP</h4>
-                    <span>2020 - 2023</span>
-                    <p>Devised project plans, maintained stakeholder communication, collaborated on software improvements, employed Agile methodologies. Managed key projects like TOSE E-commerce, Nuvi World 3D Webgame, Infow eCommerce, and Hao Hao AR Website.</p>
-                </div>
-                 <div class="experience-item">
-                    <h4>Product Manager @ Enterprise Connection</h4>
-                    <span>2017 - 2020</span>
-                    <p>Conducted marketing strategy sessions and launch planning, ensured alignment between products and company objectives.</p>
-                </div>
-                 <div class="experience-item">
-                    <h4>Project Manager @ Govi-Technology JSC</h4>
-                    <span>2015 - 2016</span>
-                    <p>Managed communications and social media for event promotion, executed events with high satisfaction, oversaw budgets and logistics.</p>
+        <section id="projects">
+            <div class="container projects-container">
+                <h2>My Projects</h2>
+                <!-- Add categories if needed, e.g., Development, Management -->
+                <div class="projects-grid">
+                    <!-- Extracted from Key Projects -->
+                    <div class="project-card">
+                        <img src="assets/portfolio-tose.png" alt="TOSE E-commerce Platform"> <!-- Placeholder -->
+                        <h3>TOSE E-commerce Platform</h3>
+                        <p>Led end-to-end product implementation, training, and post-deployment monitoring.</p>
+                        <!-- <a href="#" class="btn">View Details</a> -->
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/portfolio-nuvi.png" alt="Nuvi World 3D Webgame"> <!-- Placeholder -->
+                        <h3>Nuvi World 3D Webgame</h3>
+                        <p>Managed cross-functional teams, negotiated vendor deals 30% under budget, delivered ahead of schedule with 20K+ users/month.</p>
+                        <!-- <a href="#" class="btn">View Details</a> -->
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/portfolio-infow.png" alt="Infow eCommerce Website"> <!-- Placeholder -->
+                        <h3>Infow eCommerce Website</h3>
+                        <p>Achieved 40% profit margin, received 90% positive user feedback.</p>
+                        <!-- <a href="#" class="btn">View Details</a> -->
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/portfolio-haohao.png" alt="Hao Hao AR Website"> <!-- Placeholder -->
+                        <h3>Hao Hao AR Website</h3>
+                        <p>Delivered before deadline using Waterfall, reached 3.5K users in two weeks.</p>
+                        <!-- <a href="#" class="btn">View Details</a> -->
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out via the form below.</p> <!-- Added introductory text -->
-            <form action="#" method="post"> <!-- Added basic form attributes -->
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <!-- Add social links here if provided later -->
+             <div class="container contact-container">
+                <h2>Contact Me</h2>
+                <p>Interested in working together? Send me a message!</p>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Tuong Nguyen. All rights reserved.</p> <!-- Updated Name -->
+        <div class="container footer-container">
+            <p>&copy; 2025 Tuong Nguyen. All rights reserved.</p>
+            <!-- Maybe add social links again -->
+        </div>
     </footer>
 
     <script src="script.js"></script>
