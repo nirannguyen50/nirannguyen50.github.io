@@ -27,20 +27,28 @@ if (contactForm) {
     });
 }
 
-// Animate headings on page load and when scrolled into view
+// Animate elements on page load and when scrolled into view
 document.addEventListener("DOMContentLoaded", () => {
-    const headings = document.querySelectorAll("h1, h2, h3");
-    headings.forEach(h => h.classList.add("animate-on-scroll"));
+    // Grab most content elements within the page
+    const animatedEls = document.querySelectorAll("header * , section *");
+    animatedEls.forEach(el => el.classList.add("animate-on-scroll"));
 
-    const observer = new IntersectionObserver(entries => {
+    // Apply varied animation classes to headings
+    const headings = document.querySelectorAll("h1, h2, h3");
+    const variations = ["slide-up", "slide-left", "slide-right", "zoom-in"];
+    headings.forEach((h, idx) => {
+        h.classList.add(variations[idx % variations.length]);
+    });
+
+    const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
+                obs.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.1 });
 
-    headings.forEach(h => observer.observe(h));
+    animatedEls.forEach(el => observer.observe(el));
 });
 
